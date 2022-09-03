@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SymbolPicker",
+    name: "SymbolPicker-Custom",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v14),
@@ -14,7 +14,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SymbolPicker",
+            name: "SymbolPicker-Custom",
             targets: ["SymbolPicker"]
         ),
     ],
@@ -22,9 +22,9 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SymbolPicker",
+            name: "SymbolPicker-Custom",
             dependencies: [],
-            path: "Sources/SymbolPicker",
+            path: "Sources/SymbolPicker-Custom",
             resources: [
                 .process("Resources"),
             ]
